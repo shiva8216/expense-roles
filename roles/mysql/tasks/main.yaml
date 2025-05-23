@@ -27,7 +27,7 @@
     community.mysql.mysql_info:
       login_user: root
       login_password: "{{ mysql_root_password }}"
-      login_host: rose.itsmyroot82.fun
+      login_host: database.itsmyroot82.fun
     register: mysql_info
     ignore_errors: true
 
