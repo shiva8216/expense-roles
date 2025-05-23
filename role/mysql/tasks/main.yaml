@@ -2,7 +2,7 @@
   hosts: mysql
   become: yes
   vars:
-    mysql_root_password: ExpenseApp@1
+     mysql_root_password: ExpenseApp@1
   tasks:
   - name: install Mysql Libraries
     ansible.builtin.pip:
@@ -27,7 +27,7 @@
     community.mysql.mysql_info:
       login_user: root
       login_password: "{{ mysql_root_password }}"
-      login_host: mysql1.itsmyroot82.fun
+      login_host: rose.itsmyroot82.fun
     register: mysql_info
     ignore_errors: true
 
